@@ -1,0 +1,21 @@
+version: 3
+task_definition:
+  services:
+    wordpress:
+        deploy:
+                resources:
+                        limits:
+                                cpus: '0.50'
+                                memory: '500M'
+                        reservations:
+                                cpus: '0.25'
+                                memory: '550M'
+    mysql:
+        deploy:
+                resources:
+                        limits:
+                                cpus: '0.50'
+                                memory: '600M'
+                        reservations:
+                                cpus: '0.25'
+                                memory: '550M'

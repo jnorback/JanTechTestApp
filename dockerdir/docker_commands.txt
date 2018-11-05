@@ -1,0 +1,25 @@
+#
+#Deploy the Compose File to a Cluster
+ecs-cli compose up --create-log-groups --cluster-config jan-vibrato-test-cfg
+#
+#Check all processes (running containers on cluster)
+ecs-cli ps
+
+#Scale the Tasks on a Cluster 
+#ecs-cli compose --file hello-world.yml scale 2 --cluster-config ec2-tutorial
+ecs-cli compose scale 2 --cluster-config jan-vibrato-test-cfg
+
+#Down Tasks
+#ecs-cli compose --file hello-world.yml down --cluster-config ec2-tutorial
+ecs-cli compose down --cluster-config jan-vibrato-test-cfg
+
+#Service up
+#ecs-cli compose --file hello-world.yml service up --cluster-config ec2-tutorial
+ecs-cli compose service up --cluster-config jan-vibrato-test-cfg
+
+#Clean up
+#ecs-cli compose --file hello-world.yml service rm --cluster-config ec2-tutorial
+ecs-cli compose service rm --cluster-config jan-vibrato-test-cfg
+#Take down the cluser
+#ecs-cli down --force --cluster-config ec2-tutorial
+ecs-cli down --force --cluster-config jan-vibrato-test-cfg
