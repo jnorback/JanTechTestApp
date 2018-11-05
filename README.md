@@ -1,14 +1,13 @@
 # JanTechTestApp
 
 [![Release][release-badge]][release]
-[![GoReportCard][report-badge]][report]
 
 
+#[![Release]][release]
 
 [release-badge]: http://img.shields.io/github/release/vibrato/TechTestApp/all.svg?style=flat
 [release]:https://github.com/jnorback/JanTechTestApp/releases
-[report-badge]: https://goreportcard.com/badge/github.com/vibrato/TechTestApp
-[report]: https://goreportcard.com/report/github.com/vibrato/TechTestApp
+
 
 
 ## Overview
