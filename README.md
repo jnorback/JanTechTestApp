@@ -6,7 +6,7 @@
 #[![Release]][release]
 
 [release-badge]: http://img.shields.io/github/release/vibrato/TechTestApp/all.svg?style=flat
-[release]:https://github.com/jnorback/JanTechTestApp/releases
+[release]:https://github.com/jnorback/JanTechTestApp/releases/latest
 
 
 
