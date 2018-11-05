@@ -1,11 +1,7 @@
 # JanTechTestApp
 
-##[![Release][release-badge]][release]
-
-
 [![Release]][release]
 
-##[release-badge]: http://img.shields.io/github/release/vibrato/TechTestApp/all.svg?style=flat
 [release]:https://github.com/jnorback/JanTechTestApp/releases/latest
 
 
