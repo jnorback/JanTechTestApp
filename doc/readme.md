@@ -1,35 +1,16 @@
 # JanTechTestApp embryo to be completely changed
 
-[![Build Status][circleci-badge]][circleci]
-[![Release][release-badge]][release]
-[![GoReportCard][report-badge]][report]
-[![License][license-badge]][license]
-
-[circleci-badge]: https://circleci.com/gh/vibrato/TechTestApp.svg?style=shield&circle-token=8dfd03c6c2a5dc5555e2f1a84c36e33bc58ad0aa
-[circleci]: https://circleci.com/gh/vibrato/TechTestApp
-[release-badge]: http://img.shields.io/github/release/vibrato/TechTestApp/all.svg?style=flat
-[release]:https://github.com/vibrato/TechTestApp/releases
-[report-badge]: https://goreportcard.com/badge/github.com/vibrato/TechTestApp
-[report]: https://goreportcard.com/report/github.com/vibrato/TechTestApp
-[license-badge]: https://img.shields.io/github/license/vibrato/TechTestApp.svg?style=flat
-[license]: https://github.com/vibrato/TechTestApp/license
-
-The Vibrato techtest app is a golang application used for testing candidates applying to work with Vibrato.
+[![Release]][release]
+[release]:https://github.com/jnorback/JanTechTestApp/releases/latest
 
 ## Documentation structure
 
 [readme.md](readme.md) - this file
 [config.md](config.md) - how to configure the application
 
-### Architecture Design Records (ADR)
+## JN Tech Test Application
 
-Architectural decisions are recorded in the `adr` folder, details on why can be found in the [first entry](adr/0001-record-architecture-decisions.md)
-
-Naming convention: `####-<decision title>` where the first 4 digits are iterated by 1 for each record.
-
-## Tech Test Application
-
-Single page application designed to be ran inside a container or on a vm (IaaS) with a postgres database to store data.
+An application designed to be ran on a Linux system to download the latest release of Vibrato's Tech Test Application, create the environment to run it in an AWS ECS container
 
 It is completely self contained, and should not require any additional dependencies to run.
 
@@ -37,6 +18,7 @@ It is completely self contained, and should not require any additional dependenc
 
 1. Download latest binary from release
 2. unzip into desired location
+3. Configure the JanTechTestApp application
 3. and you should be good to go
 
 ## Start server
@@ -112,24 +94,3 @@ To build a docker image with the application installed on it
 
 `docker build . -t techtestapp:latest`
 
-## Continuous Integration
-
-Continuous integration is managed through circleci and the build on the master branch will create a new release when a new version is defined.
-
-## Creating a new release
-
-Releases are deployed and managed through github, it's an automated process that is executed through the CI solution
-
-To create a new release, update `../cmd/root.go` with the new version and merge that into the master branch.
-
-The commit message on the merge, will be the release message, so make sure it contains the release notes.
-
-A tag will be created on the master branch if the build and release is successful.
-
-We use semver for versioning, `major.minor.patch[-pre-release]` and the CI solution has been configured to take note of the `-pre-release` tag of the version and upload it as a pre-release in git if it's included. So to release a new full release, make sure to not include `-pre-release` and vice versa.
-
-Builds will be produced for:
-
-* MacOS (amd64)
-* Linux (x86/amd64)
-* Windows (x86/amd64)
