@@ -1,6 +1,7 @@
 # JanTechTestApp embryo to be completely changed
 
 [![Release]][release]
+
 [release]:https://github.com/jnorback/JanTechTestApp/releases/latest
 
 ## Documentation structure
