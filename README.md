@@ -4,8 +4,6 @@
 
 [release]:https://github.com/jnorback/JanTechTestApp/releases/latest
 
-
-
 ## Overview
 
 The aim of the current version of the pre-production application is to span up:
@@ -21,7 +19,13 @@ The aim of the current version of the pre-production application is to span up:
 
 ## Pre Requisites
 
+### A Linux Development system
+Example:
 * A Linux AMI instance in AWS that used to spanup and control the environment remotely through aws ec2 CLI and ecs-cli
+* Ensure that the AWS CLI is installed (default on the AMI Instance)
+* Ensure that the AWS ESC-CLI is installed
+
+### An AWS user account for CLI
 * An AWS account that have at least one available slot for a new VPC (the default is 5 max).
 * An AWS user that is allowed to access, crete, delete and manage VPC resources. (To be specified). An access key needs to be created for this user and saved.
 * Use the access keys to configure aws as a user on the Linux instance (matt in this example, with Sydney as the region):
@@ -30,6 +34,9 @@ The aim of the current version of the pre-production application is to span up:
 * AWS Secret Access Key: SECRET_KEY 
 * Default region name: ap-southeast-2
 * Default output format: json
+
+### An AWS user account for the ECS CLI
+
 
 
 
