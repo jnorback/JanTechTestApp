@@ -21,15 +21,15 @@ The aim of the current version of the pre-production application is to span up:
 
 ## Pre Requisites
 
-###A Linux AMI instance in AWS used to spanup
+* A Linux AMI instance in AWS that used to spanup and control the environment remotely through aws ec2 CLI and ecs-cli
 * An AWS account that have at least one available slot for a new VPC (the default is 5 max).
 * An AWS user that is allowed to access, crete, delete and manage VPC resources. (To be specified). An access key needs to be created for this user and saved.
 * Use the access keys to configure aws as a user on the Linux instance (matt in this example, with Sydney as the region):
 * matt@host $aws configure
 * AWS Access Key ID: SECRET_ID
 * AWS Secret Access Key: SECRET_KEY 
-* Default region name [Sydney]: ap-southeast-2
-* Default output format [json]:
+* Default region name: ap-southeast-2
+* Default output format: json
 
 
 
