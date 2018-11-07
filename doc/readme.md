@@ -1,4 +1,5 @@
 # JanTechTestApp embryo to be completely changed
+<!-- doc/readme.md -->
 
 [![Release]][release]
 
@@ -11,17 +12,17 @@
 
 ## JN Tech Test Application
 
-An application designed to be ran on a Linux system to download the latest release of Vibrato's Tech Test Application, create the environment to run it in an AWS ECS container
+<!--An application designed to be ran on a Linux system to download the latest release of Vibrato's Tech Test Application, create the environment to run it in an AWS ECS container
 
-It is completely self contained, and should not require any additional dependencies to run.
+It is completely self contained, and should not require any additional dependencies to run. -->
 
 ## Install
 
-1. Download latest binary from release
+<!--1. Download latest binary from release
 2. unzip into desired location
 3. Configure the JanTechTestApp application
 3. and you should be good to go
-
+-->
 ## Start server
 
 update `conf.toml` with database settings (details on how to configure the application can be found in [config.md](config.md))
