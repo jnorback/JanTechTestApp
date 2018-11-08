@@ -12,19 +12,22 @@
 
 ## JN Tech Test Application
 
-<!--An application designed to be ran on a Linux system to download the latest release of Vibrato's Tech Test Application, create the environment to run it in an AWS ECS container
+An application designed to be ran on a Linux system to download the latest release of Vibrato's Tech Test Application, create the environment to run it in an AWS ECS container and start the application.
 
-It is completely self contained, and should not require any additional dependencies to run. -->
+It is completely self contained, and should not require any additional dependencies to run except for the AWS IAM user (or users). 
+
+Note that this initial test release is only spanning up the VPC, the ECS and starts a test application!
 
 ## Install
 
-<!--1. Download latest binary from release
+1. Download latest binary from release
 2. unzip into desired location
-3. Configure the JanTechTestApp application
-3. and you should be good to go
--->
+3. Configure the  AWS IAM user (or users). 
+4. Configure the JanTechTestApp application (there is a default setup but the access to the AWS CLI and ECS-CLI need to be in place or manually setup before starting the application).
+5. and you should be good to go
 ## Start server
 
+<!--
 update `conf.toml` with database settings (details on how to configure the application can be found in [config.md](config.md))
 
 `./TechTestApp updatedb` to create a database, tables, and seed it with test data. Use `-s` to skip creating the database.
@@ -95,4 +98,6 @@ the `dist` folder contains the compiled web package
 To build a docker image with the application installed on it
 
 `docker build . -t techtestapp:latest`
+
+-->
 

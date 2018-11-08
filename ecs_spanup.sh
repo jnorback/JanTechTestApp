@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Source the environment
-SOURCE_FILE=~/lab/ecs_spanup.env
+SOURCE_FILE=./ecs_spanup.env
 source $SOURCE_FILE
 
 #LOGFILE for all output
